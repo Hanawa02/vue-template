@@ -62,3 +62,28 @@ export default {
   plugins: []
 }
 ```
+
+## 4. Add Storybook
+
+Following [Storybook Guide for Vue with Vite](https://storybook.js.org/docs/get-started/vue3-vite)
+
+```bash
+npx storybook@latest init
+```
+
+Replace config in `/.storybook/main.ts` for `docs` to enable auto generating a docs page for the stories:
+
+```ts
+docs: {
+  autodocs: true
+}
+```
+
+Removed the `stories` folder with demo component and stories.
+
+Added css styles to `./storybook/preview.ts`:
+
+```ts
+// This is needed to apply tailwind and other styles to the stories preview
+import '../src/assets/main.css'
+```
