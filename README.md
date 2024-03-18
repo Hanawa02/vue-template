@@ -1,6 +1,8 @@
-# vue-template
+# Vue Template: Vite, Typescript, Eslint, Prettier, Tailwindcss and Storybook.
 
-This template should help get you started developing with Vue 3 in Vite.
+This template should help get you started developing with Vue 3 in Vite, with Typescript, Eslint, Prettier, Tailwindcss and Storybook.
+
+You can see [here the steps](./Steps.md) used to create this template.
 
 ## Recommended IDE Setup
 
