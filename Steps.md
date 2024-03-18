@@ -90,7 +90,7 @@ import '../src/assets/main.css'
 
 ### 5. Add Vue Fire
 
-Following [Vue Fire Instructions]()
+Following [Vue Fire Instructions](https://vuefire.vuejs.org/guide/getting-started.html)
 
 ```bash
 npm i vuefire firebase
