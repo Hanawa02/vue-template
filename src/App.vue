@@ -13,7 +13,9 @@ const aboutPath = routes.about.path
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-
+      <div class="bg-green-700 text-white p-4 my-2 rounded-md">
+        Tailwind is working if this is green
+      </div>
       <nav>
         <RouterLink :to="homePath">Home</RouterLink>
         <RouterLink :to="aboutPath">About</RouterLink>

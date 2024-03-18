@@ -1,18 +1,17 @@
 @import './base.css';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  @apply max-w-screen-xl mx-auto my-0 p-8 font-normal;
+  @apply lg:grid lg:grid-cols-2 lg:py-0;
 }
 
 a,
 .green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  @apply text-green-500 p-1 transition-all duration-300;
 }
 
 @media (hover: hover) {
@@ -25,11 +24,5 @@ a,
   body {
     display: flex;
     place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
   }
 }

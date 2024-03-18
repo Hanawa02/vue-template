@@ -37,3 +37,28 @@ This was done to have the routing names easily accessible with types.
 We extract the route basic info to its own file, so we can use it to centralize the routes information, without needing to rely on strings. This also allow for easy update of routes path or name, without needing to update everywhere they are used.
 
 See `/src/router/routes.ts`, `/src/router/index.ts` and `/src/App.vue` for reference.
+
+## 3. Add Tailwind
+
+Following [Tailwind guide for Vite](https://tailwindcss.com/docs/guides/vite):
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+```
+
+```bash
+npx tailwindcss init -p
+```
+
+Update `tailwind.config.js` with
+
+```js
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.vue'],
+  theme: {
+    extend: {}
+  },
+  plugins: []
+}
+```
