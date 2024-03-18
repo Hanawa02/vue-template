@@ -87,3 +87,29 @@ Added css styles to `./storybook/preview.ts`:
 // This is needed to apply tailwind and other styles to the stories preview
 import '../src/assets/main.css'
 ```
+
+### 5. Add Vue Fire
+
+Following [Vue Fire Instructions]()
+
+```bash
+npm i vuefire firebase
+```
+
+create `./src/database/fireabase.ts`
+
+update `./main.ts` with:
+
+```ts
+// ...
+import { VueFire } from 'vuefire'
+import { firebaseApp } from './database/firebase'
+// ...
+
+const app = createApp(App)
+// ...
+
+app.use(VueFire, {
+  firebaseApp
+})
+```
